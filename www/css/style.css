@@ -1,0 +1,76 @@
+/* Empty. Add your own CSS if you like */
+
+@import url(http://fonts.googleapis.com/css?family=Play);
+.title, ion-view { font-family: Play !important; color:white; }
+
+.scroll-content { background-color: #303030 !important; }
+
+.tabs-striped .tab-item.tab-item-active 
+{
+  border-color: #cccccc !important; font-family: Play !important;font-size: 15pt;
+}
+.tabs-striped .tab-item.activated 
+{
+  border-color: #999999 !important; color: rgba(211, 211, 211,.9)!important;
+}
+.tabs-striped .tab-item {font-family: Play !important;font-size: 15pt; }
+
+div.list.card div.item-divider { background-color: #105555;color: #ffffff; }
+div.list.card div.item-body { background-color: #204040;color: #ffffff; padding: 8px 15px; }
+div.list.card { margin-top: 25px;margin-bottom: 0px; }
+.alignleft {float: left;}
+.alignright {float: right;}
+div.list.card div.item-body div.alignleft { text-align: left; }
+div.list.card div.item-body div.alignright { text-align: right;padding-left: 0px; }
+
+
+
+
+
+.ptlist{color: white;margin-right: 1px;margin-left: 1px;}
+.ptlist:activated {
+  margin-right:0px;margin-left:0px;
+  border-left:0px solid transparent;border-right:0px solid transparent;}
+div.ptlist a{padding-right:32px;
+  border-left: 1px solid transparent;border-right: 1px solid transparent;
+}
+div.ptlist a div{width: 100%; margin: -8px 0px -8px -7px;}
+div.ptlist a div:activate {width: 100%; margin: -8px 0px -8px -7px;}
+div.ptlist a div div.leftbox{width: 100%;}
+div.ptlist a div div.rightbox{width: auto;text-align: right;
+  margin-right: -5px;
+}
+div.ptlist a:nth-child(2n+1) { background-color: rgba(45,45,45,.65); }
+div.ptlist a:nth-child(2n) { background-color: rgba(30,30,30,.65); }
+div.ptlist a:active{ background-color: rgba(140,140,140,.15);border-left:1px solid transparent;border-right:1px solid transparent; }
+div.ptlist a:hover{border-left:1px solid transparent;border-right:1px solid transparent;}
+
+/***************************//**************************//****************************/
+@media(min-width: 800px){
+div.list.card div.item-divider, div.list.card div.item-body 
+{ font-family: Play !important; font-size: 22pt !important;}
+div.list.card div.item-body { line-height: 25pt;}
+.titlec {font-size: 25pt;} .pointsc {font-size: 21pt;} .changec {font-size: 24pt;}
+div.ptlist a div{margin: -4px 0px -6px -5px;}
+}
+@media(min-width: 491px) and (max-width: 799px){
+div.list.card div.item-divider, div.list.card div.item-body 
+{ font-family: Play !important; font-size: 17pt !important;}
+div.list.card div.item-body { line-height: 18pt;}
+.titlec {font-size: 19pt;} .pointsc {font-size: 17.5pt;} .changec {font-size: 18.5pt;}
+div.ptlist a div{margin: -6px 0px -7px -6px;}
+}
+@media(min-width: 268px) and (max-width: 320px){
+div.list.card div.item-divider, div.list.card div.item-body 
+{ font-family: Play !important; font-size: 10pt !important;}
+div.list.card div.item-body { line-height: 12pt;}
+.titlec {font-size: 10.5pt;} .pointsc {font-size: 10.5pt;} .changec {font-size: 11pt;}
+}
+@media(max-width: 267px){
+div.list.card div.item-divider, div.list.card div.item-body 
+{ font-family: Play !important; font-size: 8pt !important;}
+.tabs-striped .tab-item.tab-item-active,.tabs-striped .tab-item {font-size: 12pt;}
+div.list.card div.item-body { line-height: 11pt;}
+.titlec {font-size: 9.5pt;} .pointsc {font-size: 10pt;} .changec {font-size: 11pt;}
+}
+

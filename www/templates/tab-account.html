@@ -1,0 +1,41 @@
+<ion-view view-title="Movers">
+  <ion-content class="padding">
+
+    <div class="list card" ng-controller="ptmov">
+      <div class="item item-divider">Gainers</div>
+      <div class="item item-body">
+        <span ng-repeat="day in fiver.query.results.row | orderBy:predicate:reverse | limitTo:5">
+          <div class="">
+            {{ day.name }}<br>{{ day.points }}&nbsp;{{ day.vpoints }}&nbsp;{{ day.change }}<br>
+            {{ ( day.vpoints / day.points ) * 100 }}
+          </div><br>
+        </span>
+      </div>
+    </div>
+
+    <div class="list card" ng-controller="ptmov">
+      <div class="item item-divider">Losers</div>
+      <div class="item item-body">
+        <span ng-repeat="day in fiver.query.results.row | orderBy:'name' | limitTo:5">
+          <div class="">
+            {{ day.name }}<br>{{ day.points }}&nbsp;{{ day.vpoints }}&nbsp;{{ day.change }}<br>
+            {{ ( day.vpoints / day.points ) * 100 }}
+          </div><br>
+        </span>
+      </div>
+    </div>
+
+    <div class="list card" ng-controller="ptmov">
+      <div class="item item-divider">Volume</div>
+      <div class="item item-body">
+        <span ng-repeat="day in fiver.query.results.row | orderBy:'name'">
+          <div class="">
+            {{ day.name }}<br>{{ day.points }}&nbsp;{{ day.vpoints }}&nbsp;{{ day.change }}<br>
+            {{ ( day.vpoints / day.points ) * 100 }}
+          </div><br>
+        </span>
+      </div>
+    </div>
+            
+  </ion-content>
+</ion-view>

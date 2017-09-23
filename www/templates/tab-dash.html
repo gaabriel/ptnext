@@ -1,0 +1,39 @@
+<ion-view view-title="Euronext">
+  <ion-content class="padding">
+
+      <div class="list card" ng-controller="indexpt">
+        <div class="item item-divider">Portugal</div>
+        <div class="item item-body">
+          <div class="alignleft">PSI-ALL<br>PSI-20</div>
+          <span ng-repeat="day in fiver.query.results.row">
+            <div class="alignright">
+              {{ day.points }}&nbsp;&nbsp;{{ day.change }}
+            </div><br>
+          </span>
+        </div>
+      </div>
+      <div class="list card" ng-controller="indexeuro">
+        <div class="item item-divider">Euronext</div>
+        <div class="item item-body">
+          <div class="alignleft">AEX<br/>BEL-20<br/>CAC-40</div>
+          <span ng-repeat="day in fiver.query.results.row">
+            <div class="alignright">
+              {{ day.points }}&nbsp;&nbsp;{{ day.change }}
+            </div><br>
+          </span>
+        </div>
+      </div>     
+      <div class="list card" ng-controller="indexworld">
+        <div class="item item-divider">World</div>
+        <div class="item item-body">
+          <div class="alignleft">NYSE<br/>NASDAQ<br/>S&P-500<br/>CanadaTSX<br/>DAX-30<br/>FTSE-100<br/>Stoxx50<br/>Nikkei 225<br/>HongKong<br/>Mexico-IPC<br/>Chile-IPSA<br/>MerVal<br/>Ibovespa<br/></div>
+          <span ng-repeat="day in fiver.query.results.row">
+            <div class="alignright">
+              {{ day.points }}&nbsp;&nbsp;{{ day.change }}
+            </div><br>
+          </span>
+        </div>
+      </div>      
+            
+  </ion-content>
+</ion-view>
